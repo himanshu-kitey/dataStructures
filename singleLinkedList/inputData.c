@@ -10,7 +10,7 @@ struct student *inputData(struct student *ptr)
 	if(newnode==NULL)
 	{
 		printf("Node not Created.\n");
-		return 0;
+		return ptr;
 	}
 	else
 	{

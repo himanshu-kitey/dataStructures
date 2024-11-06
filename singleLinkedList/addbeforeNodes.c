@@ -2,11 +2,11 @@
 struct student *addbeforeNodes(struct student *start,int roll)
 {
 	struct student *temp;
-	//struct student *ptr;
+	struct student *ptr;
 	if(start==NULL)
 	{
 		printf("List is Empty.\n");
-		return 0;
+		return start;
 	}
 	if(roll==start->roll)
 	{
@@ -21,11 +21,11 @@ struct student *addbeforeNodes(struct student *start,int roll)
 		start=temp;
 		return start;
 	}
-	/*
+	
 	ptr=start;
 	while(ptr->link!=NULL)
 	{
-		if(ptr->link->roll==roll)
+		if(roll==ptr->link->roll)
 		{
 			temp=(struct student *)malloc(sizeof(struct student));
 			printf("Enter Roll No.:");
@@ -40,7 +40,7 @@ struct student *addbeforeNodes(struct student *start,int roll)
 		}
 		ptr=ptr->link;
 	}
-	*/
+	
 	printf("%d is not present in the list.\n",roll);
 	return start;
 	

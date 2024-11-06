@@ -2,6 +2,7 @@
 /* To Print Menu*/
 void printMenu(void)
 {
+	printf("-----------------------\n");
 	printf("1.Input Data.\n");
 	printf("2.Display List\n");
 	printf("3.Count Nodes.\n");
@@ -10,5 +11,7 @@ void printMenu(void)
 	printf("6.Add at End.\n");
 	printf("7.Add After Node.\n");
 	printf("8.Add Before Node.\n");
-	printf("9.Exit.\n");
+	printf("9.Save Data.\n");
+	printf("10.Exit.\n");
+	printf("-----------------------\n");
 }

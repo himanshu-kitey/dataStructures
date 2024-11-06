@@ -1,9 +1,10 @@
 #include "singleHeaders.h"
-void displayList(struct student *ptr)
+struct student *displayList(struct student *ptr)
 {
 	if(ptr==NULL)
 	{
 		printf("List is Empty.\n");
+		return ptr;
 	}
 	printf("List is:\n");
 	while(ptr!=NULL)
@@ -17,5 +18,6 @@ void displayList(struct student *ptr)
 		ptr=ptr->link;
 	}
 	printf("\n");
+	return ptr;
 }
 

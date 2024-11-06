@@ -7,7 +7,7 @@ struct student *addatBeg(struct student *start)
 	if(temp==NULL)
 	{
 		printf("Node not creared.\n");
-		return 0;
+		return start;
 	}
 	else
 	{

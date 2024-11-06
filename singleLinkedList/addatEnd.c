@@ -7,7 +7,7 @@ struct student *addatEnd(struct student *start)
 	if(temp==NULL)
 	{
 		printf("List is Empty.\n");
-		return 0;
+		return start;
 	}
 	else
 	{

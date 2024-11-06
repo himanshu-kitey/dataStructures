@@ -3,6 +3,7 @@ int main(void)
 {
 	struct student *head=NULL;
 	int choice;	int data;
+	head=syncFromFile(head);	//Reading From FILE.
 	while(1)
 	{
 		printMenu();
@@ -12,7 +13,7 @@ int main(void)
 		{
 			case 1:head=inputData(head);
 			       break;
-			case 2:displayList(head);
+			case 2:head=displayList(head);
 			       break;
 			case 3:countNodes(head);
 			       break;
@@ -37,7 +38,10 @@ int main(void)
 			      scanf("%d",&data);
 			      head=addbeforeNodes(head,data);
 			      break;
-			case 9:exit(1);
+			case 9:
+			      head=saveData(head);
+			      break;
+			case 10:exit(1);
 
 			default:
 			       printf("Wrong Choice.\n");
@@ -46,5 +50,4 @@ int main(void)
 
 	}
 }
-
 
