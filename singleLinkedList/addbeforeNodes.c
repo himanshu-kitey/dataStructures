@@ -39,8 +39,7 @@ struct student *addbeforeNodes(struct student *start,int roll)
 			return start;
 		}
 		ptr=ptr->link;
-	}
-	
+	}	
 	printf("%d is not present in the list.\n",roll);
 	return start;
 	

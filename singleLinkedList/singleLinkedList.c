@@ -13,7 +13,7 @@ int main(void)
 		{
 			case 1:head=inputData(head);
 			       break;
-			case 2:head=displayList(head);
+			case 2:displayList(head);
 			       break;
 			case 3:countNodes(head);
 			       break;
