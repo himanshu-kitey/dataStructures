@@ -15,6 +15,7 @@ void printMenu(void)
 	printf("10.Add Sorted.\n");
 	printf("11.Add at Posn.\n");
 	printf("12.Delete Node.\n");
-	printf("13.Exit.\n");
+	printf("13.Reverse Nodes.\n");
+	printf("14.Exit.\n");
 	printf("-----------------------\n");
 }

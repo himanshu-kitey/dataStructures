@@ -26,4 +26,5 @@ extern struct student *syncFromFile(struct student *);
 extern struct student *addSorted(struct student *);
 extern struct student *addatPosn(struct student *,int);
 extern struct student *deleteNode(struct student *,int);
+extern struct student *reverseNodes(struct student *);
 #endif

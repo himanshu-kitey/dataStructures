@@ -55,7 +55,10 @@ int main(void)
 			      scanf("%d",&data);
 			      head=deleteNode(head,data);
 			      break;
-			case 13:exit(1);
+			case 13:
+			      head=reverseNodes(head);
+			      break;
+			case 14:exit(1);
 
 			default:
 			       printf("Wrong Choice.\n");
