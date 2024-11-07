@@ -50,7 +50,12 @@ int main(void)
 			      scanf("%d",&posn);
 			      head=addatPosn(head,posn);
 			      break;
-			case 12:exit(1);
+			case 12:
+			      printf("Enter Roll No. To be Delete:");
+			      scanf("%d",&data);
+			      head=deleteNode(head,data);
+			      break;
+			case 13:exit(1);
 
 			default:
 			       printf("Wrong Choice.\n");

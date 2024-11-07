@@ -4,6 +4,7 @@ void displayList(struct student *ptr)
 	if(ptr==NULL)
 	{
 		printf("List is Empty.\n");
+		return;
 	}
 	printf("List is:\n");
 	while(ptr!=NULL)
