@@ -13,6 +13,7 @@ void printMenu(void)
 	printf("8.Add Before Node.\n");
 	printf("9.Save Data.\n");
 	printf("10.Add Sorted.\n");
-	printf("11.Exit.\n");
+	printf("11.Add at Posn.\n");
+	printf("12.Exit.\n");
 	printf("-----------------------\n");
 }

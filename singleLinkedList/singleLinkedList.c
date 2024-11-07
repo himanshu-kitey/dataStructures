@@ -3,6 +3,7 @@ int main(void)
 {
 	struct student *head=NULL;
 	int choice;	int data;
+	int posn;
 //	head=syncFromFile(head);	//Reading From FILE.
 	while(1)
 	{
@@ -44,7 +45,12 @@ int main(void)
 			case 10:
 			      head=addSorted(head);
 			      break;
-			case 11:exit(1);
+			case 11:
+			      printf("Enter the Posn:");
+			      scanf("%d",&posn);
+			      head=addatPosn(head,posn);
+			      break;
+			case 12:exit(1);
 
 			default:
 			       printf("Wrong Choice.\n");
