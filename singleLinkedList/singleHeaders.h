@@ -23,5 +23,5 @@ extern struct student *addafterNodes(struct student *,int);
 extern struct student *addbeforeNodes(struct student *,int);
 extern struct student *saveData(struct student *);
 extern struct student *syncFromFile(struct student *);
-
+extern struct student *addSorted(struct student *ptr);
 #endif

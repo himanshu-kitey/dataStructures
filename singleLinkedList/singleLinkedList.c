@@ -3,7 +3,7 @@ int main(void)
 {
 	struct student *head=NULL;
 	int choice;	int data;
-	head=syncFromFile(head);	//Reading From FILE.
+//	head=syncFromFile(head);	//Reading From FILE.
 	while(1)
 	{
 		printMenu();
@@ -41,7 +41,10 @@ int main(void)
 			case 9:
 			      head=saveData(head);
 			      break;
-			case 10:exit(1);
+			case 10:
+			      head=addSorted(head);
+			      break;
+			case 11:exit(1);
 
 			default:
 			       printf("Wrong Choice.\n");
